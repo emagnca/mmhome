@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="sv">
+
+  <head>
+    <meta charset="utf-8">
+    <title>TinyDMS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HomePage for SimpleDMS">
+    <link href="assets/css/loaders/loader-typing.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets/css/theme-saas-trend.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="preload" as="font" href="assets/fonts/Inter-UI-upright.var.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="assets/fonts/Inter-UI.var.woff2" type="font/woff2" crossorigin="anonymous">
+      <style>
+        .fb9 {
+          border: 1px solid #3366FF;
+          background-color: #B3C6FF;
+          width:150px;
+          height:30px;
+        }
+      </style>
+      <script src='https://www.google.com/recaptcha/api.js'></script>
+  </head>
+
+  <body>
+    <div class="loader">
+      <div class="loading-animation"></div>
+    </div>
+
+    <div class="navbar-container bg-primary">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary" data-sticky="top">
+        <div class="container">
+          <a class="navbar-brand fade-page" href="index.html">
+            TinyDMS<!--img src="assets/img/logo-white.svg" alt="MMDok"-->
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <img class="icon navbar-toggler-open" src="assets/img/icons/interface/menu.svg" alt="menu interface icon" data-inject-svg />
+            <img class="icon navbar-toggler-close" src="assets/img/icons/interface/cross.svg" alt="cross interface icon" data-inject-svg />
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end">
+            <div class="py-2 py-lg-0">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a href="https://mmdok.se" target="_blank" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">GUI-klient</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="https://pypi.org/project/mmdok-cli/" target="_blank" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Cli-klient</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <section class="bg-primary text-light o-hidden">
+      <div class="container">
+        <div class="row align-items-center min-vh-50">
+          <div class="col-lg-6 text-center text-lg-left mb-4 mb-lg-0">
+            <h1 class="display-3">Sikta mot högre höjder.</h1>
+            <div class="my-4">
+              <p class="lead">TinyDMS är ett modernt, minimalt, enkelt och skalbart DMS (Document Management System) utvecklat att kunna hantera hundratals miljoner dokument.
+                              Det kan köra serverless, i en container eller lokalt med en och samma kodbas. Du kan använda oss som en SaaS för att
+                              fritt lagra egna dokument. Kontakta oss om du sedan vill dela dokument inom en grupp eller företag. Du får då
+                              tillgång till ett gui där du enkelt kan administrera dokumentens attribut (metadata) och medlemmarnas
+                              rättigheter till dokumenten.
+              </p>
+            </div>
+            <a href="https://mmdok.se" class="btn btn-lg btn-primary-2">Prova</a>
+          </div>
+          <div class="col-lg-6 text-center" data-aos="fade-left">
+            <img src="assets/img/saas-sketch-1.svg" alt="Image" class="min-vw-60">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row justify-content-center text-center mb-6">
+          <div class="col-xl-8 col-lg-9">
+            <h3 class="display-4 mx-xl-6">Grunden för dokumenthantering</h3>
+            <p class="lead">
+              En lång erfarenhet av dokumentlagring med stora volymer har lett till slutsatsen att ett DMS i grunden har
+              två krav. Att garantera att lagrade dokument är återsökningsbara samt att behörighetsskydda dokument. 
+              Varken mer eller mindre.
+              Då system som dominerar marknaden har stor komplexitet och kan liknas vid klumpiga dinosaurier byggde vi TinyDMS
+              som i jämförelse är en liten snabb ödla. Kärnan uppfyller grundkraven och byggs ut med tilläggsfunktionalitet.
+              Läs mer om några av dess fördelar nedan.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <a href="#" class="card card-icon-2 card-body justify-content-between hover-shadow-3d">
+              <div class="icon-round mb-3 mb-md-4 icon bg-primary">
+                <img class="icon bg-primary" src="assets/img/icons/theme/weather/suset-1.svg" alt="icon" data-inject-svg />
+              </div>
+              <h5 class="mb-0">Enkelt, robust och snabbt</h5>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <a href="#" class="card card-icon-2 card-body justify-content-between hover-shadow-3d bg-primary text-light">
+              <div class="icon-round mb-3 mb-md-4 icon bg-white">
+                <img class="icon bg-white" src="assets/img/icons/theme/navigation/route.svg" alt="icon" data-inject-svg />
+              </div>
+              <h5 class="mb-0">API-first med ett minimalt api</h5>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <a href="#" class="card card-icon-2 card-body justify-content-between hover-shadow-3d bg-primary-2 text-light">
+              <div class="icon-round mb-3 mb-md-4 icon bg-white">
+                <img class="icon bg-white" src="assets/img/icons/theme/tools/swiss-knife.svg" alt="icon" data-inject-svg />
+              </div>
+              <h5 class="mb-0">Attribut + rollbaserad behörighets-styrning</h5>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <a href="#" class="card card-icon-2 card-body justify-content-between hover-shadow-3d bg-primary-3 text-light">
+              <div class="icon-round mb-3 mb-md-4 icon bg-white">
+                <img class="icon bg-white" src="assets/img/icons/theme/tools/tools.svg" alt="icon" data-inject-svg />
+              </div>
+              <h5 class="mb-0">Dynamisk konfiguration av attribut och roller</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pt-0">
+      <div class="container">
+        <div class="row justify-content-around align-items-center">
+          <div class="col-6 col-md-5 mb-4 mb-md-0">
+            <img src="assets/img/saas-sketch-6.svg" alt="Image">
+          </div>
+          <div class="col-xl-6 col-md-7">
+            <h4 class="h1">Egenskaper hos TinyDMS</h4>
+            <div class="mt-4 mb-3">
+              <div class="border-bottom pb-3 mb-3">
+                <div data-target="#panel-1" class="accordion-panel-title" data-toggle="collapse" role="button" aria-expanded="false">
+                  <span class="h6 mb-0">Behörighetshantering</span>
+                  <img class="icon" src="assets/img/icons/interface/plus.svg" alt="plus interface icon" data-inject-svg />
+                </div>
+                <div class="collapse showx" id="panel-1">
+                  <div class="pt-3">
+                    <p class="mb-0">
+                      Alla operationer i api:t utom att logga in och registrera en användare kräver rättigheter. Man kan antingen 
+                      registrera sig som enskild användare eller som del av en grupp/företag. I det förra fallet har man fulla
+                      rättigheter till sina egna dokument. I det senare fallet sätts rättigheter upp av en gruppadministratör. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="border-bottom pb-3 mb-3">
+                <div data-target="#panel-2" class="accordion-panel-title" data-toggle="collapse" role="button" aria-expanded="false">
+                  <span class="h6 mb-0">Dokumenttyper</span>
+                  <img class="icon" src="assets/img/icons/interface/plus.svg" alt="plus interface icon" data-inject-svg />
+                </div>
+                <div class="collapse" id="panel-2">
+                  <div class="pt-3">
+                    <p class="mb-0">
+                      För enskilda användare är dokumenttyper och attribut standardiserade och gemensamma för alla enskilda användare.
+                      För användare som delar dokument med en grupp är dessa definierade i ett admin ui av en gruppadministratör.
+ 
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="border-bottom pb-3 mb-3">
+                <div data-target="#panel-3" class="accordion-panel-title" data-toggle="collapse" role="button" aria-expanded="false">
+                  <span class="h6 mb-0">Auditloggning</span>
+                  <img class="icon" src="assets/img/icons/interface/plus.svg" alt="plus interface icon" data-inject-svg />
+                </div>
+                <div class="collapse" id="panel-3">
+                  <div class="pt-3">
+                    <p class="mb-0">
+                      Allt som görs med dokumentet; visningar, uppdateringar m.m. loggas. Dessa auditloggar kan
+                      enkelt inspekteras av behöriga användare.
+                     </p>
+                  </div>
+                </div>
+              </div>
+              <div class="border-bottom pb-3 mb-3">
+                <div data-target="#panel-4" class="accordion-panel-title" data-toggle="collapse" role="button" aria-expanded="false">
+                  <span class="h6 mb-0">Notifikationer</span>
+                  <img class="icon" src="assets/img/icons/interface/plus.svg" alt="plus interface icon" data-inject-svg />
+                </div>
+                <div class="collapse" id="panel-4">
+                  <div class="pt-3">
+                    <p class="mb-0">
+                      Notikationer sänds ut när dokument skapas eller raderas. Ett exempel på en notifieringsklient är 
+                      <a href="https://mmdok.se/notification.html">en notifikationsklient</a>. Klienten tar en url parameter
+                      ?group=<i>gruppnamn</i>, där <i>gruppnamn</i> är namnet på en grupp som delar dokument. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="border-bottom pb-3 mb-3">
+                <div data-target="#panel-5" class="accordion-panel-title" data-toggle="collapse" role="button" aria-expanded="false">
+                  <span class="h6 mb-0">Serversida</span>
+                  <img class="icon" src="assets/img/icons/interface/plus.svg" alt="plus interface icon" data-inject-svg />
+                </div>
+                <div class="collapse" id="panel-5">
+                  <div class="pt-3">
+                    <p class="mb-0">
+                      Default server är en serverless lamda lokaliserad på AWS. Servern kan med samma kodbas köra lokalt
+                      eller hos en annan molnleverantör.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="border-bottom pb-3 mb-3">
+                <div data-target="#panel-6" class="accordion-panel-title" data-toggle="collapse" role="button" aria-expanded="false">
+                  <span class="h6 mb-0">Klienter</span>
+                  <img class="icon" src="assets/img/icons/interface/plus.svg" alt="plus interface icon" data-inject-svg />
+                </div>
+                <div class="collapse" id="panel-6">
+                  <div class="pt-3">
+                    <p class="mb-0">
+                      MMDok kan nås via ett REST API. 
+                      <a href="https://pypi.org/project/mmdok-cli/" target="_blank">MMCli</a> är en Python client som använder detta API.<br>
+                      <a href="https://mmdok.se/" target="_blank">gui client</a> är en GUI klient. Samma login fungerar för båda.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="border-bottom pb-3 mb-3">
+                <div data-target="#panel-7" class="accordion-panel-title" data-toggle="collapse" role="button" aria-expanded="false">
+                  <span class="h6 mb-0">Administration</span>
+                  <img class="icon" src="assets/img/icons/interface/plus.svg" alt="plus interface icon" data-inject-svg />
+                </div>
+                <div class="collapse" id="panel-7">
+                  <div class="pt-3">
+                    <p class="mb-0">
+                      Administration av dokumenttyper, användare och deras rättigheter kan göras via ett admin gui. Två bilder från gui:t visas
+                      som exempel nedan. Kontakta oss om du vill skapa en grupp och få tillgång till gui:t för att administrera din grupp.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+            <!--div class="text-small text-muted">Fler frågor? <a href="#" class="hover-arrow">Get in touch</a>
+            </div-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section  class="bg-primary-alt">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-6">
+          <div class="col-xl-8 col-lg-9">
+            <h2 class="display-4 mx-xl-6">Build it from the ground up.</h2>
+            <p class="lead">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+          <div class="col-xl-11">
+            <ul class="nav justify-content-center" role="tablist">
+              <li class="nav-item mx-1">
+                <a class="nav-link active" href="#saas-tab-1" data-toggle="tab" role="tab" aria-controls="saas-tab-1" aria-selected="true">
+                  <div class="icon-round icon-round-sm bg-secondary">
+                    <img class="icon bg-primary" src="assets/img/icons/theme/shopping/box-2.svg" alt="box-2 icon" data-inject-svg />
+                  </div>
+                  Custom Dashboard
+                </a>
+              </li>
+              <li class="nav-item mx-1">
+                <a class="nav-link" href="#saas-tab-2" data-toggle="tab" role="tab" aria-controls="saas-tab-2" aria-selected="true">
+                  <div class="icon-round icon-round-sm bg-secondary">
+                    <img class="icon bg-primary" src="assets/img/icons/theme/shopping/chart-pie.svg" alt="chart-pie icon" data-inject-svg />
+                  </div>
+                  Smart Analytics
+                </a>
+              </li>
+              <li class="nav-item mx-1">
+                <a class="nav-link" href="#saas-tab-3" data-toggle="tab" role="tab" aria-controls="saas-tab-3" aria-selected="false">
+                  <div class="icon-round icon-round-sm bg-secondary">
+                    <img class="icon bg-primary" src="assets/img/icons/theme/design/saturation.svg" alt="saturation icon" data-inject-svg />
+                  </div>
+                  Administration
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-xl-11" data-aos="fade-up">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="saas-tab-1" role="tabpanel" aria-labelledby="saas-tab-1">
+                <div class="popover-image">
+                  <div class="popover-hotspot bg-primary-2" style="top: 25%; left: 10%;" data-toggle="popover" title="Hotspot title" data-content="And here's some amazing content. It's very engaging. Right?"></div>
+                  <div class="popover-hotspot bg-primary-2" style="top: 10%; left: 90%;" data-toggle="popover" title="Hotspot title" data-content="And here's some amazing content. It's very engaging. Right?"></div>
+                  <div class="popover-hotspot bg-primary-2" style="top: 90%; left: 20%;" data-toggle="popover" title="Hotspot title" data-content="And here's some more amazing content. It's very engaging. Right?"></div>
+                  <img src="file:///Users/magnuscarlhammar/Desktop/mmdok_gui.png" alt="Image" class="rounded border shadow-lg">
+                </div>
+              </div>
+              <div class="tab-pane fade" id="saas-tab-2" role="tabpanel" aria-labelledby="saas-tab-2">
+                <div class="popover-image">
+                  <div class="popover-hotspot bg-primary-2" style="top: 25%; left: 90%;" data-toggle="popover" title="Hotspot title" data-content="And here's some amazing content. It's very engaging. Right?"></div>
+                  <div class="popover-hotspot bg-primary-2" style="top: 90%; left: 10%;" data-toggle="popover" title="Hotspot title" data-content="And here's some amazing content. It's very engaging. Right?"></div>
+                  <div class="popover-hotspot bg-primary-2" style="top: 30%; left: 60%;" data-toggle="popover" title="Hotspot title" data-content="And here's some more amazing content. It's very engaging. Right?"></div>
+                  <img src="assets/img/saas-2.jpg" alt="Image" class="rounded border shadow-lg">
+                </div>
+              </div>
+              <div class="tab-pane fade" id="saas-tab-3" role="tabpanel" aria-labelledby="saas-tab-3">
+                <div class="popover-image">
+                  <div class="popover-hotspot bg-primary-2" style="top: 2%; left: 2%;" data-toggle="popover" title="Hotspot title" data-content="And here's some amazing content. It's very engaging. Right?"></div>
+                  <div class="popover-hotspot bg-primary-2" style="top: 35%; left: 95%;" data-toggle="popover" title="Hotspot title" data-content="And here's some amazing content. It's very engaging. Right?"></div>
+                  <div class="popover-hotspot bg-primary-2" style="top: 90%; left: 50%;" data-toggle="popover" title="Hotspot title" data-content="And here's some more amazing content. It's very engaging. Right?"></div>
+                  <img src="../images/admin_main.png" alt="Image" class="rounded border shadow-lg">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row justify-content-center text-center mb-4">
+          <div class="col-xl-8 col-lg-9">
+            <h2 class="h1">Roadmap</h2>
+            <p class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+          </div>
+        </div>
+        <div class="row o-hidden o-lg-visible">
+          <div class="col d-flex flex-column align-items-center">
+            <ol class="process-vertical">
+              <li data-aos="fade-left">
+                <div class="process-circle bg-primary"></div>
+                <div>
+                  <span class="text-small text-muted">October 2016</span>
+                  <h5 class="mb-0">Secured Series-A funding</h5>
+                </div>
+              </li>
+              <li data-aos="fade-right">
+                <div class="process-circle bg-primary"></div>
+                <div>
+                  <span class="text-small text-muted">April 2017</span>
+                  <h5 class="mb-0">New CTO: Joe Schultz</h5>
+                </div>
+              </li>
+              <li data-aos="fade-left">
+                <div class="process-circle bg-primary"></div>
+                <div>
+                  <span class="text-small text-muted">October 2017</span>
+                  <h5 class="mb-0">v1.0 Ships</h5>
+                </div>
+              </li>
+              <li data-aos="fade-right">
+                <div class="process-circle bg-primary"></div>
+                <div>
+                  <span class="text-small text-muted">February 2018</span>
+                  <h5 class="mb-0">Featured in Wired</h5>
+                </div>
+              </li>
+              <li data-aos="fade-left">
+                <div class="process-circle bg-primary"></div>
+                <div>
+                  <span class="text-small text-muted">September 2018</span>
+                  <h5 class="mb-0">v.20 Ships</h5>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-primary-3 text-light o-hidden">
+      <div class="container layer-1">
+        <div class="row justify-content-center text-center mb-6">
+          <div class="col-xl-8 col-lg-9">
+            <h2 class="display-4 mx-xl-6">Kontakta oss.</h2>
+            <p class="lead">
+              Om du vill skapa en grupp som delar dokument eller vill ha mer information
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-xl-4 col-lg-5 col-md-6">
+            <form>
+              <div class="form-group">
+                <label for="service-name-1">Ditt namn</label>
+                <input name="service-name" id="service-name-1" type="text" class="form-control form-control-lg" placeholder="Ditt namn">
+              </div>
+              <div class="form-group">
+                <label for="service-email-1">Epost</label>
+                <input name="service-email" id="service-email-1" type="email" class="form-control form-control-lg" placeholder="namn@foobar.se">
+              </div>
+              <div class="form-group">
+                <label for="group-name-1">Önskat namn på grupp (om något)</label>
+                <input name="group-name" id="service-name-1" type="text" class="form-control form-control-lg" placeholder="Önskat gruppnamn">
+              </div>
+              <div class="form-group">
+                <label for="textarea-1">Meddelande</label>
+                <textarea class="form-control form-control-lg" id="textarea-1" rows="3" placeholder="Meddelande"></textarea>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div data-jarallax-element="0 50">
+        <div class="decoration bottom left scale-3">
+          <img class="bg-primary-2" src="assets/img/decorations/deco-blob-5.svg" alt="deco-blob-5 decoration" data-inject-svg />
+        </div>
+      </div>
+    </section>
+    <footer class="pb-5 bg-primary text-light">
+      <div class="container">
+        <div class="row mb-4 justify-content-center">
+          <div class="col-auto">
+            <a href="index.html">
+              TinyDMS<!--img src="assets/img/logo-white.svg" alt="TinyDMS" class="icon icon-lg"-->
+            </a>
+          </div>
+        </div>
+
+        <div class="row justify-content-center text-center">
+          <div class="col-xl-10">
+            <small class="text-muted">Kontakt: info@mmdok.se</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#" class="btn back-to-top btn-primary btn-round" data-smooth-scroll data-aos="fade-up" data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
+      <img class="icon" src="assets/img/icons/theme/navigation/arrow-up.svg" alt="arrow-up icon" data-inject-svg />
+    </a>
+    <!-- Required vendor scripts (Do not remove) -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+
+    <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
+
+    <!-- AOS (Animate On Scroll - animates elements into view while scrolling down) -->
+    <script type="text/javascript" src="assets/js/aos.js"></script>
+    <!-- Clipboard (copies content from browser into OS clipboard) -->
+    <script type="text/javascript" src="assets/js/clipboard.min.js"></script>
+    <!-- Fancybox (handles image and video lightbox and galleries) -->
+    <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
+    <!-- Flatpickr (calendar/date/time picker UI) -->
+    <script type="text/javascript" src="assets/js/flatpickr.min.js"></script>
+    <!-- Flickity (handles touch enabled carousels and sliders) -->
+    <script type="text/javascript" src="assets/js/flickity.pkgd.min.js"></script>
+    <!-- Ion rangeSlider (flexible and pretty range slider elements) -->
+    <script type="text/javascript" src="assets/js/ion.rangeSlider.min.js"></script>
+    <!-- Isotope (masonry layouts and filtering) -->
+    <script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- jarallax (parallax effect and video backgrounds) -->
+    <script type="text/javascript" src="assets/js/jarallax.min.js"></script>
+    <script type="text/javascript" src="assets/js/jarallax-video.min.js"></script>
+    <script type="text/javascript" src="assets/js/jarallax-element.min.js"></script>
+    <!-- jQuery Countdown (displays countdown text to a specified date) -->
+    <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
+    <!-- jQuery smartWizard facilitates steppable wizard content -->
+    <script type="text/javascript" src="assets/js/jquery.smartWizard.min.js"></script>
+    <!-- Plyr (unified player for Video, Audio, Vimeo and Youtube) -->
+    <script type="text/javascript" src="assets/js/plyr.polyfilled.min.js"></script>
+    <!-- Prism (displays formatted code boxes) -->
+    <script type="text/javascript" src="assets/js/prism.js"></script>
+    <!-- ScrollMonitor (manages events for elements scrolling in and out of view) -->
+    <script type="text/javascript" src="assets/js/scrollMonitor.js"></script>
+    <!-- Smooth scroll (animation to links in-page)-->
+    <script type="text/javascript" src="assets/js/smooth-scroll.polyfills.min.js"></script>
+    <!-- SVGInjector (replaces img tags with SVG code to allow easy inclusion of SVGs with the benefit of inheriting colors and styles)-->
+    <script type="text/javascript" src="assets/js/svg-injector.umd.production.js"></script>
+    <!-- TwitterFetcher (displays a feed of tweets from a specified account)-->
+    <script type="text/javascript" src="assets/js/twitterFetcher_min.js"></script>
+    <!-- Typed text (animated typing effect)-->
+    <script type="text/javascript" src="assets/js/typed.min.js"></script>
+    <!-- Required theme scripts (Do not remove) -->
+    <script type="text/javascript" src="assets/js/theme.js"></script>
+    <!-- Removes page load animation when window is finished loading -->
+    <script type="text/javascript">
+      window.addEventListener("load", function () {    document.querySelector('body').classList.add('loaded');  });
+    </script>
+
+  </body>
+
+</html>

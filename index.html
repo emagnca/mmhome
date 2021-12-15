@@ -6,10 +6,19 @@
     <title>TinyDMS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="HomePage for SimpleDMS">
-    <link href="assets/css/loaders/loader-typing.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="assets/css/theme-saas-trend.css" rel="stylesheet" type="text/css" media="all" />
-    <link rel="preload" as="font" href="assets/fonts/Inter-UI-upright.var.woff2" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" as="font" href="assets/fonts/Inter-UI.var.woff2" type="font/woff2" crossorigin="anonymous">
+    <link href="pages/assets/css/loaders/loader-typing.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="pages/assets/css/theme-saas-trend.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="preload" as="font" href="pages/assets/fonts/Inter-UI-upright.var.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="pages/assets/fonts/Inter-UI.var.woff2" type="font/woff2" crossorigin="anonymous">
+      <style>
+        .fb9 {
+          border: 1px solid #3366FF;
+          background-color: #B3C6FF;
+          width:150px;
+          height:30px;
+        }
+      </style>
+      <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
 
   <body>
@@ -21,11 +30,11 @@
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary" data-sticky="top">
         <div class="container">
           <a class="navbar-brand fade-page" href="index.html">
-            TinyDMS<!--img src="assets/img/logo-white.svg" alt="MMDok"-->
+            TinyDMS<!--img src="pages/assets/img/logo-white.svg" alt="MMDok"-->
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-            <img class="icon navbar-toggler-open" src="assets/img/icons/interface/menu.svg" alt="menu interface icon" data-inject-svg />
-            <img class="icon navbar-toggler-close" src="assets/img/icons/interface/cross.svg" alt="cross interface icon" data-inject-svg />
+            <img class="icon navbar-toggler-open" src="pages/assets/img/icons/interface/menu.svg" alt="menu interface icon" data-inject-svg />
+            <img class="icon navbar-toggler-close" src="pages/assets/img/icons/interface/cross.svg" alt="cross interface icon" data-inject-svg />
           </button>
 
           <div class="collapse navbar-collapse justify-content-end">
@@ -59,7 +68,7 @@
             <a href="https://mmdok.se" class="btn btn-lg btn-primary-2">Prova</a>
           </div>
           <div class="col-lg-6 text-center" data-aos="fade-left">
-            <img src="assets/img/saas-sketch-1.svg" alt="Image" class="min-vw-60">
+            <img src="pages/assets/img/saas-sketch-1.svg" alt="Image" class="min-vw-60">
           </div>
         </div>
       </div>
@@ -84,7 +93,7 @@
           <div class="col-md-6 col-lg-3 d-flex" data-aos="fade-up" data-aos-delay="100">
             <a href="#" class="card card-icon-2 card-body justify-content-between hover-shadow-3d">
               <div class="icon-round mb-3 mb-md-4 icon bg-primary">
-                <img class="icon bg-primary" src="assets/img/icons/theme/weather/suset-1.svg" alt="icon" data-inject-svg />
+                <img class="icon bg-primary" src="pages/assets/img/icons/theme/weather/suset-1.svg" alt="icon" data-inject-svg />
               </div>
               <h5 class="mb-0">Enkelt, robust och snabbt</h5>
             </a>
@@ -92,7 +101,7 @@
           <div class="col-md-6 col-lg-3 d-flex" data-aos="fade-up" data-aos-delay="200">
             <a href="#" class="card card-icon-2 card-body justify-content-between hover-shadow-3d bg-primary text-light">
               <div class="icon-round mb-3 mb-md-4 icon bg-white">
-                <img class="icon bg-white" src="assets/img/icons/theme/navigation/route.svg" alt="icon" data-inject-svg />
+                <img class="icon bg-white" src="pages/assets/img/icons/theme/navigation/route.svg" alt="icon" data-inject-svg />
               </div>
               <h5 class="mb-0">API-first med ett minimalt api</h5>
             </a>
@@ -100,7 +109,7 @@
           <div class="col-md-6 col-lg-3 d-flex" data-aos="fade-up" data-aos-delay="300">
             <a href="#" class="card card-icon-2 card-body justify-content-between hover-shadow-3d bg-primary-2 text-light">
               <div class="icon-round mb-3 mb-md-4 icon bg-white">
-                <img class="icon bg-white" src="assets/img/icons/theme/tools/swiss-knife.svg" alt="icon" data-inject-svg />
+                <img class="icon bg-white" src="pages/assets/img/icons/theme/tools/swiss-knife.svg" alt="icon" data-inject-svg />
               </div>
               <h5 class="mb-0">Attribut + rollbaserad behörighets-styrning</h5>
             </a>
@@ -108,7 +117,7 @@
           <div class="col-md-6 col-lg-3 d-flex" data-aos="fade-up" data-aos-delay="400">
             <a href="#" class="card card-icon-2 card-body justify-content-between hover-shadow-3d bg-primary-3 text-light">
               <div class="icon-round mb-3 mb-md-4 icon bg-white">
-                <img class="icon bg-white" src="assets/img/icons/theme/tools/tools.svg" alt="icon" data-inject-svg />
+                <img class="icon bg-white" src="pages/assets/img/icons/theme/tools/tools.svg" alt="icon" data-inject-svg />
               </div>
               <h5 class="mb-0">Dynamisk konfiguration av attribut och roller</h5>
             </a>
@@ -120,15 +129,15 @@
       <div class="container">
         <div class="row justify-content-around align-items-center">
           <div class="col-6 col-md-5 mb-4 mb-md-0">
-            <img src="assets/img/saas-sketch-6.svg" alt="Image">
+            <img src="pages/assets/img/saas-sketch-6.svg" alt="Image">
           </div>
           <div class="col-xl-6 col-md-7">
-            <h4 class="h2">Egenskaper hos TinyDMS</h4>
+            <h4 class="h1">Egenskaper hos TinyDMS</h4>
             <div class="mt-4 mb-3">
               <div class="border-bottom pb-3 mb-3">
                 <div data-target="#panel-1" class="accordion-panel-title" data-toggle="collapse" role="button" aria-expanded="false">
                   <span class="h6 mb-0">Behörighetshantering</span>
-                  <img class="icon" src="assets/img/icons/interface/plus.svg" alt="plus interface icon" data-inject-svg />
+                  <img class="icon" src="pages/assets/img/icons/interface/plus.svg" alt="plus interface icon" data-inject-svg />
                 </div>
                 <div class="collapse showx" id="panel-1">
                   <div class="pt-3">
@@ -143,7 +152,7 @@
               <div class="border-bottom pb-3 mb-3">
                 <div data-target="#panel-2" class="accordion-panel-title" data-toggle="collapse" role="button" aria-expanded="false">
                   <span class="h6 mb-0">Dokumenttyper</span>
-                  <img class="icon" src="assets/img/icons/interface/plus.svg" alt="plus interface icon" data-inject-svg />
+                  <img class="icon" src="pages/assets/img/icons/interface/plus.svg" alt="plus interface icon" data-inject-svg />
                 </div>
                 <div class="collapse" id="panel-2">
                   <div class="pt-3">
@@ -159,7 +168,7 @@
               <div class="border-bottom pb-3 mb-3">
                 <div data-target="#panel-3" class="accordion-panel-title" data-toggle="collapse" role="button" aria-expanded="false">
                   <span class="h6 mb-0">Auditloggning</span>
-                  <img class="icon" src="assets/img/icons/interface/plus.svg" alt="plus interface icon" data-inject-svg />
+                  <img class="icon" src="pages/assets/img/icons/interface/plus.svg" alt="plus interface icon" data-inject-svg />
                 </div>
                 <div class="collapse" id="panel-3">
                   <div class="pt-3">
@@ -173,7 +182,7 @@
               <div class="border-bottom pb-3 mb-3">
                 <div data-target="#panel-4" class="accordion-panel-title" data-toggle="collapse" role="button" aria-expanded="false">
                   <span class="h6 mb-0">Notifikationer</span>
-                  <img class="icon" src="assets/img/icons/interface/plus.svg" alt="plus interface icon" data-inject-svg />
+                  <img class="icon" src="pages/assets/img/icons/interface/plus.svg" alt="plus interface icon" data-inject-svg />
                 </div>
                 <div class="collapse" id="panel-4">
                   <div class="pt-3">
@@ -188,7 +197,7 @@
               <div class="border-bottom pb-3 mb-3">
                 <div data-target="#panel-5" class="accordion-panel-title" data-toggle="collapse" role="button" aria-expanded="false">
                   <span class="h6 mb-0">Serversida</span>
-                  <img class="icon" src="assets/img/icons/interface/plus.svg" alt="plus interface icon" data-inject-svg />
+                  <img class="icon" src="pages/assets/img/icons/interface/plus.svg" alt="plus interface icon" data-inject-svg />
                 </div>
                 <div class="collapse" id="panel-5">
                   <div class="pt-3">
@@ -202,7 +211,7 @@
               <div class="border-bottom pb-3 mb-3">
                 <div data-target="#panel-6" class="accordion-panel-title" data-toggle="collapse" role="button" aria-expanded="false">
                   <span class="h6 mb-0">Klienter</span>
-                  <img class="icon" src="assets/img/icons/interface/plus.svg" alt="plus interface icon" data-inject-svg />
+                  <img class="icon" src="pages/assets/img/icons/interface/plus.svg" alt="plus interface icon" data-inject-svg />
                 </div>
                 <div class="collapse" id="panel-6">
                   <div class="pt-3">
@@ -218,27 +227,144 @@
               <div class="border-bottom pb-3 mb-3">
                 <div data-target="#panel-7" class="accordion-panel-title" data-toggle="collapse" role="button" aria-expanded="false">
                   <span class="h6 mb-0">Administration</span>
-                  <img class="icon" src="assets/img/icons/interface/plus.svg" alt="plus interface icon" data-inject-svg />
+                  <img class="icon" src="pages/assets/img/icons/interface/plus.svg" alt="plus interface icon" data-inject-svg />
                 </div>
                 <div class="collapse" id="panel-7">
                   <div class="pt-3">
                     <p class="mb-0">
                       Administration av dokumenttyper, användare och deras rättigheter kan göras via ett admin gui. Två bilder från gui:t visas
                       som exempel nedan. Kontakta oss om du vill skapa en grupp och få tillgång till gui:t för att administrera din grupp.
-<br/><br/>
-<h4>Huvudfönstret</h4>
-<img src="https://mmdok.se/images/admin_main.png" alt="Bilden hittades inte">
-<h4>Fönster för att administrera attribut(metadata)</h4>
-<br/>
-<img src="https://mmdok.se/images/admin_field.png" alt="Bilden hittades inte">
-
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            <!--div class="text-small text-muted">Fler frågor? <a href="#" class="hover-arrow">Get in touch</a>
-            </div-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section  class="bg-primary-alt">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-6">
+          <div class="col-xl-8 col-lg-9">
+            <h2 class="display-4 mx-xl-6">Gränssnitt.</h2>
+            <p class="lead">
+              Se nedan vårt användargränssnitt, admingränssnitt och cli. Det första är för att söka, lagra och se dokument. Det användare
+              för att administrera dokumenttyper, metadata och rättigheter. Det tredje för kommunikation från andra program. Cli:et är en
+              implementation av vårt Rest Api.
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+          <div class="col-xl-11">
+            <ul class="nav justify-content-center" role="tablist">
+              <li class="nav-item mx-1">
+                <a class="nav-link active" href="#saas-tab-1" data-toggle="tab" role="tab" aria-controls="saas-tab-1" aria-selected="true">
+                  <div class="icon-round icon-round-sm bg-primary">
+                    <img class="icon bg-primary" src="pages/assets/img/icons/theme/general/user.svg" alt="box-2 icon" data-inject-svg />
+                  </div>
+                  Användargränssnitt
+                </a>
+              </li>
+              <li class="nav-item mx-1">
+                <a class="nav-link" href="#saas-tab-2" data-toggle="tab" role="tab" aria-controls="saas-tab-2" aria-selected="true">
+                  <div class="icon-round icon-round-sm bg-primary">
+                    <img class="icon bg-primary" src="pages/assets/img/icons/theme/tools/swiss-knife.svg" alt="chart-pie icon" data-inject-svg />
+                  </div>
+                  Admingränssnitt
+                </a>
+              </li>
+              <li class="nav-item mx-1">
+                <a class="nav-link" href="#saas-tab-3" data-toggle="tab" role="tab" aria-controls="saas-tab-3" aria-selected="false">
+                  <div class="icon-round icon-round-sm bg-primary">
+                    <img class="icon bg-primary" src="pages/assets/img/icons/theme/navigation/route.svg" alt="saturation icon" data-inject-svg />
+                  </div>
+                  Kommandoradsgränssnitt
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-xl-11" data-aos="fade-up">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="saas-tab-1" role="tabpanel" aria-labelledby="saas-tab-1">
+                <div class="popover-image">
+                  <div class="popover-hotspot bg-primary-2" style="top: 15%; left: 85%;" data-toggle="popover" title="Sökresultat" data-content="Lista med matchande dokument. Med klick på en rad går det att se dokumentet, metadata, uppdatera, se auditlogg m.m."></div>
+                  <div class="popover-hotspot bg-primary-2" style="top: 60%; left: 10%;" data-toggle="popover" title="Sökfält" data-content="Sök på via admin-gui:t dynamiskt konfigurerbar metadata."></div>
+                  <img src="images/mmdok_gui.png" alt="Image" class="rounded border shadow-lg">
+                </div>
+              </div>
+              <div class="tab-pane fade" id="saas-tab-2" role="tabpanel" aria-labelledby="saas-tab-3">
+                <div class="popover-image">
+                  <div class="popover-hotspot bg-primary-2" style="top: 20%; left: 20%;" data-toggle="popover" title="Dokumenttyper" data-content="Konfigurera vilka typer av dokument och deras metadata."></div>
+                  <div class="popover-hotspot bg-primary-2" style="top: 50%; left: 20%;" data-toggle="popover" title="Behörighetshantering" data-content="Konfigurera rättigheter och villkor för vad som kan göras med dokument"></div>
+                  <div class="popover-hotspot bg-primary-2" style="top: 80%; left: 20%;" data-toggle="popover" title="Roller" data-content="Organisera användarna i roller som tilldelas rättigheter."></div>
+                  <div class="popover-hotspot bg-primary-2" style="top: 50%; left: 90%;" data-toggle="popover" title="Historik" data-content="Se historik över ändringar"></div>
+                  <img src="images/admin_main.png" alt="Image" class="rounded border shadow-lg">
+                </div>
+              </div>
+              <div class="tab-pane fade" id="saas-tab-3" role="tabpanel" aria-labelledby="saas-tab-3">
+                <div class="popover-image">
+                  <div class="popover-hotspot bg-primary-2" style="top: 10%; left: 50%;" data-toggle="popover" title="Cli" data-content="En klient finns i Python. Klienter i fler programspråk kommer."></div>
+                  <div class="popover-hotspot bg-primary-2" style="top: 50%; left: 50%;" data-toggle="popover" title="API" data-content="Cli:et skrivet i Python speglar de operationer som finns i API:t"></div>
+                  <img src="images/cli.png" alt="Image" class="rounded border shadow-lg">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row justify-content-center text-center mb-4">
+          <div class="col-xl-8 col-lg-9">
+            <h2 class="h1">Roadmap</h2>
+            <p class="lead">Se nedan några av närmaste framtidsplaner</p>
+          </div>
+        </div>
+        <div class="row o-hidden o-lg-visible">
+          <div class="col d-flex flex-column align-items-center">
+            <ol class="process-vertical">
+              <li data-aos="fade-left">
+                <div class="process-circle bg-primary"></div>
+                <div>
+                  <span class="text-small text-muted">Februari 2022</span>
+                  <h5 class="mb-0">OCR-tolkning av inkommande dokument. Metadata skall kunna utvinnas ur dokumenten om de matchar de metadataformat som registreras i admin-gui:t.</h5>
+                </div>
+              </li>
+              <li data-aos="fade-right">
+                <div class="process-circle bg-primary"></div>
+                <div>
+                  <span class="text-small text-muted">April 2022</span>
+                  <h5 class="mb-0">Fritextsökning i dokument och metadata</h5>
+                </div>
+              </li>
+              <li data-aos="fade-left">
+                <div class="process-circle bg-primary"></div>
+                <div>
+                  <span class="text-small text-muted">Juni 2022</span>
+                  <h5 class="mb-0">Mobilklienter för sökning och visualiseringa av dokument</h5>
+                </div>
+              </li>
+              <li data-aos="fade-right">
+                <div class="process-circle bg-primary"></div>
+                <div>
+                  <span class="text-small text-muted">Augusti 2022</span>
+                  <h5 class="mb-0">Dokumentgenerering från mallar där metadata matas in enligt metadata som konfigurerats i admin</h5>
+                </div>
+              </li>
+              <li data-aos="fade-left">
+                <div class="process-circle bg-primary"></div>
+                <div>
+                  <span class="text-small text-muted">December 2022</span>
+                  <h5 class="mb-0">Signering av dokument</h5>
+                </div>
+              </li>
+            </ol>
           </div>
         </div>
       </div>
@@ -259,15 +385,19 @@
             <form>
               <div class="form-group">
                 <label for="service-name-1">Ditt namn</label>
-                <input name="service-name" id="service-name-1" type="text" class="form-control form-control-lg" placeholder="Skriv ditt namn">
+                <input name="service-name" id="service-name-1" type="text" class="form-control form-control-lg" placeholder="Ditt namn">
               </div>
               <div class="form-group">
                 <label for="service-email-1">Epost</label>
-                <input name="service-email" id="service-email-1" type="email" class="form-control form-control-lg" placeholder="du@foo.bar.se">
+                <input name="service-email" id="service-email-1" type="email" class="form-control form-control-lg" placeholder="namn@foobar.se">
               </div>
               <div class="form-group">
                 <label for="group-name-1">Önskat namn på grupp (om något)</label>
                 <input name="group-name" id="service-name-1" type="text" class="form-control form-control-lg" placeholder="Önskat gruppnamn">
+              </div>
+              <div class="form-group">
+                <label for="textarea-1">Meddelande</label>
+                <textarea class="form-control form-control-lg" id="textarea-1" rows="3" placeholder="Meddelande"></textarea>
               </div>
             </form>
           </div>
@@ -275,7 +405,7 @@
       </div>
       <div data-jarallax-element="0 50">
         <div class="decoration bottom left scale-3">
-          <img class="bg-primary-2" src="assets/img/decorations/deco-blob-5.svg" alt="deco-blob-5 decoration" data-inject-svg />
+          <img class="bg-primary-2" src="pages/assets/img/decorations/deco-blob-5.svg" alt="deco-blob-5 decoration" data-inject-svg />
         </div>
       </div>
     </section>
@@ -284,7 +414,7 @@
         <div class="row mb-4 justify-content-center">
           <div class="col-auto">
             <a href="index.html">
-              TinyDMS<!--img src="assets/img/logo-white.svg" alt="TinyDMS" class="icon icon-lg"-->
+              TinyDMS<!--img src="pages/assets/img/logo-white.svg" alt="TinyDMS" class="icon icon-lg"-->
             </a>
           </div>
         </div>
@@ -298,53 +428,53 @@
     </footer>
 
     <a href="#" class="btn back-to-top btn-primary btn-round" data-smooth-scroll data-aos="fade-up" data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
-      <img class="icon" src="assets/img/icons/theme/navigation/arrow-up.svg" alt="arrow-up icon" data-inject-svg />
+      <img class="icon" src="pages/assets/img/icons/theme/navigation/arrow-up.svg" alt="arrow-up icon" data-inject-svg />
     </a>
     <!-- Required vendor scripts (Do not remove) -->
-    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/popper.min.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="pages/assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="pages/assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="pages/assets/js/bootstrap.js"></script>
 
     <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
 
     <!-- AOS (Animate On Scroll - animates elements into view while scrolling down) -->
-    <script type="text/javascript" src="assets/js/aos.js"></script>
+    <script type="text/javascript" src="pages/assets/js/aos.js"></script>
     <!-- Clipboard (copies content from browser into OS clipboard) -->
-    <script type="text/javascript" src="assets/js/clipboard.min.js"></script>
+    <script type="text/javascript" src="pages/assets/js/clipboard.min.js"></script>
     <!-- Fancybox (handles image and video lightbox and galleries) -->
-    <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="pages/assets/js/jquery.fancybox.min.js"></script>
     <!-- Flatpickr (calendar/date/time picker UI) -->
-    <script type="text/javascript" src="assets/js/flatpickr.min.js"></script>
+    <script type="text/javascript" src="pages/assets/js/flatpickr.min.js"></script>
     <!-- Flickity (handles touch enabled carousels and sliders) -->
-    <script type="text/javascript" src="assets/js/flickity.pkgd.min.js"></script>
+    <script type="text/javascript" src="pages/assets/js/flickity.pkgd.min.js"></script>
     <!-- Ion rangeSlider (flexible and pretty range slider elements) -->
-    <script type="text/javascript" src="assets/js/ion.rangeSlider.min.js"></script>
+    <script type="text/javascript" src="pages/assets/js/ion.rangeSlider.min.js"></script>
     <!-- Isotope (masonry layouts and filtering) -->
-    <script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="pages/assets/js/isotope.pkgd.min.js"></script>
     <!-- jarallax (parallax effect and video backgrounds) -->
-    <script type="text/javascript" src="assets/js/jarallax.min.js"></script>
-    <script type="text/javascript" src="assets/js/jarallax-video.min.js"></script>
-    <script type="text/javascript" src="assets/js/jarallax-element.min.js"></script>
+    <script type="text/javascript" src="pages/assets/js/jarallax.min.js"></script>
+    <script type="text/javascript" src="pages/assets/js/jarallax-video.min.js"></script>
+    <script type="text/javascript" src="pages/assets/js/jarallax-element.min.js"></script>
     <!-- jQuery Countdown (displays countdown text to a specified date) -->
-    <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
+    <script type="text/javascript" src="pages/assets/js/jquery.countdown.min.js"></script>
     <!-- jQuery smartWizard facilitates steppable wizard content -->
-    <script type="text/javascript" src="assets/js/jquery.smartWizard.min.js"></script>
+    <script type="text/javascript" src="pages/assets/js/jquery.smartWizard.min.js"></script>
     <!-- Plyr (unified player for Video, Audio, Vimeo and Youtube) -->
-    <script type="text/javascript" src="assets/js/plyr.polyfilled.min.js"></script>
+    <script type="text/javascript" src="pages/assets/js/plyr.polyfilled.min.js"></script>
     <!-- Prism (displays formatted code boxes) -->
-    <script type="text/javascript" src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="pages/assets/js/prism.js"></script>
     <!-- ScrollMonitor (manages events for elements scrolling in and out of view) -->
-    <script type="text/javascript" src="assets/js/scrollMonitor.js"></script>
+    <script type="text/javascript" src="pages/assets/js/scrollMonitor.js"></script>
     <!-- Smooth scroll (animation to links in-page)-->
-    <script type="text/javascript" src="assets/js/smooth-scroll.polyfills.min.js"></script>
+    <script type="text/javascript" src="pages/assets/js/smooth-scroll.polyfills.min.js"></script>
     <!-- SVGInjector (replaces img tags with SVG code to allow easy inclusion of SVGs with the benefit of inheriting colors and styles)-->
-    <script type="text/javascript" src="assets/js/svg-injector.umd.production.js"></script>
+    <script type="text/javascript" src="pages/assets/js/svg-injector.umd.production.js"></script>
     <!-- TwitterFetcher (displays a feed of tweets from a specified account)-->
-    <script type="text/javascript" src="assets/js/twitterFetcher_min.js"></script>
+    <script type="text/javascript" src="pages/assets/js/twitterFetcher_min.js"></script>
     <!-- Typed text (animated typing effect)-->
-    <script type="text/javascript" src="assets/js/typed.min.js"></script>
+    <script type="text/javascript" src="pages/assets/js/typed.min.js"></script>
     <!-- Required theme scripts (Do not remove) -->
-    <script type="text/javascript" src="assets/js/theme.js"></script>
+    <script type="text/javascript" src="pages/assets/js/theme.js"></script>
     <!-- Removes page load animation when window is finished loading -->
     <script type="text/javascript">
       window.addEventListener("load", function () {    document.querySelector('body').classList.add('loaded');  });
