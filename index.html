@@ -486,7 +486,7 @@
   grecaptcha.ready(function() {
         grecaptcha.execute('6LewIq0dAAAAAAbVnxSVyYBo1Y_-pTqqfzf4fnw0', {action: 'demo'})
             .then(function(token) {
-              alert('got token:' + token);
+              console.log('Captcha token:' + token);
               captcha_token = token;
             });
     });
@@ -509,7 +509,7 @@
                         name: name_value, 
                         email: email_value, 
                         group: group_value,
-                        token = captcha_token
+                        token: captcha_token
                     });
 
       posting.done(function( data )
