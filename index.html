@@ -382,7 +382,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-xl-4 col-lg-5 col-md-6">
-            <form id="contactForm" action="https://m3h5gwv3u0.execute-api.eu-north-1.amazonaws.com/prod/message" method="post">
+            <form id="contactForm" action="https://m3h5gwv3u0.execute-api.eu-north-1.amazonaws.com/prod/message" method="get">
               <div class="form-group">
                 <label for="name">Ditt namn</label>
                 <input name="name" id="name" type="text" class="form-control form-control-lg" placeholder="Ditt namn">
@@ -504,14 +504,14 @@
           url = $form.attr('action');
 
       /* Send the data using post */
-      var posting = $.post( url, { 
+      var g = $.get( url, { 
                         name: name_value, 
                         email: email_value, 
                         group: group_value,
                         token: captcha_token
                     });
 
-      posting.done(function( data )
+      g.done(function( data )
       {
           /* Put the results in a div */
           $( "#contactResponse" ).html("<p>Tack! Vi återkommer när din grupp är skapad.</p>");
@@ -522,7 +522,7 @@
           /* Disable the button. */
           $submit.attr("disabled", true);
       });
-      posting.fail(function(xhr) {
+      g.fail(function(xhr) {
         $( "#contactResponse" ).html("<p>"+ xhr.responseText + "</p>");
       });
  });
